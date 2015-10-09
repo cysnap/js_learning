@@ -13,4 +13,11 @@ var bob = new Object();
 //Now we can add bob's information , with full name and age.
 	bob.setInfo("Bob Smith",50,"Male");
 
+//"this" Works for everyone
+var susan = new Object();
+	susan.setInfo = setInfo;
+	susan.setInfo("Susan Lawrence",35,"Female");
+
+//do some output format.
 console.log(bob.name + " is " + bob.age + " years old, and born in " + bob.BirthYear + " !");
+console.log(susan.name + " is " + susan.age + " years old, and born in " + susan.BirthYear + " !");
